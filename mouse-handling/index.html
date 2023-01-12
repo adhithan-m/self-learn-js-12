@@ -1,0 +1,54 @@
+<html>
+<head>
+<script type ="text/javascript">
+ function loadme()
+ {
+ alert("page is loaded")
+ }
+  function unloadme()
+ {
+ alert("page is unloaded")
+ }
+  function clickme()
+ {
+ alert("The mouse is clicked")
+ }
+   function dblclickme()
+ {
+ alert("The mouse is  double clicked")
+ }
+   function mouseoverme()
+ {
+ alert("The mouse is over the div")
+ }
+ function mouseupme()
+ {
+ alert("The mouse is out of the div")
+ }
+  function mouseoutme()
+ {
+ alert("The mouse is out of the div")
+ }
+</script>
+</head>
+<body onload="loadme()" onunload="unloadme()" onresize="resizeme()">
+<div style="background-color:red;height:200px;width:200px;" onclick="clickme()">
+<h3>ONCLICK EVENT</h3>
+</div>
+
+<div style="background-color:purple;height:200px;width:200px;" ondblclick="dblclickme()">
+<h3>ONDBLCLICK EVENT</h3>
+
+<div style="background-color:orange;height:200px;width:200px;" onmouseover="mouseoverme()">
+<h3>ONMOUSEOVER EVENT</h3>
+
+<div style="background-color:gray;height:200px;width:200px;" onmousedown="mousedownme()">
+<h3>ONMOUSEDOWN EVENT</h3>
+
+<div style="background-color:merun;height:200px;width:200px;" onmouseup="mouseupme()" onmouseout="mouseoutme">
+<h3>ONMOUSEUP EVENT</h3>
+
+</div>
+</div>
+</body>
+</html>
